@@ -1,6 +1,6 @@
 # Image data cleaning with pytorch (GPU)
 
-I created this small tool to clean a dataset from redundant images. It was no trivial process as redundant images often are not similar. F.e. they can have just a little different brightness, they can be cropped, mirrored etc.
+I created this small tool to clean a dataset from redundant images. It was no trivial process as redundant images often are not the same. F.e. they can have just a little different brightness, they can be cropped, mirrored etc.
 
 This tool processes all images in a given directory by any choosen pretrained model (I used resnet50) with the last layer cut out, to get latent vector. Then the tool uses the latent vecotr to compare image similarity (cosine_similarity between vectors).
 
